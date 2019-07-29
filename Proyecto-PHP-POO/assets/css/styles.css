@@ -1,5 +1,4 @@
 /*GENERALES*/
-
 * {
   padding: 0px;
   margin: 0px;
@@ -20,14 +19,6 @@ a:visited {
 
 a:hover {
   color: #555555;
-}
-
-.alert_green {
-  color: green;
-}
-
-.alert_red {
-  color: red;
 }
 
 table {
@@ -179,6 +170,19 @@ td {
 }
 
 /*FORMS*/
+/* Session */
+.alert_Verde {
+  padding: 5px;
+  color: green;
+  border-bottom: 1px solid black;
+  box-shadow: 0px 0px 2px 1px gray;
+}
+.alert_Rojo {
+  padding: 5px;
+  color: red;
+  border-bottom: 1px solid black;
+  box-shadow: 0px 0px 2px 1px gray;
+}
 .form_container {
   width: 50%;
 }

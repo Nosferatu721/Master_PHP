@@ -2,15 +2,10 @@
 
 class Database
 {
-  private $host = 'localhost';
-  private $db = 'tienda_master';
-  private $user = 'root';
-  private $pass = '';
-  
   public static function conectar()
   {
-    // Creamos la conection a la DB
-    $db = mysqli($this->host, $this->user, $this->pass, $this->db);
+    // Crear coneccion a base de datos con sus datos
+    $db = new mysqli('localhost', 'root', '', 'tienda_master');
     $db->query("SET NAMES 'utf8'");
     return $db;
   }

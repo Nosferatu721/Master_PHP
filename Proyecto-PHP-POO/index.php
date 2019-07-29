@@ -1,8 +1,13 @@
 <?php
+session_start();
+// Cargar DB
+require_once 'config/db.php';
 // Cargamos todos los controladores necesarios
 require_once 'autoload.php';
 // Cargamos lo variables Absolutas
 require_once 'config/parameters.php';
+// Cargamos helpers :v
+require_once 'helpers/utils.php';
 // Incluimos los trozos de html
 require_once 'views/layout/header.php';
 require_once 'views/layout/sidebar.php';
